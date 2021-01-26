@@ -1,0 +1,404 @@
+@font-face {
+  font-family: emphasisFont;
+  src: url("/fonts/Marshmallows\ and\ Chocolate\ -\ TTF.ttf");
+}
+
+@font-face {
+  font-family: paragraphFont;
+  src: url("/fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+  font-family: links;
+  src: url("/fonts/Montserrat-light.ttf");
+}
+
+@font-face {
+  font-family: textBox;
+  src: url("/fonts/Montserrat-LightItalic.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+/*index page */
+
+
+
+
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 p {
+  margin-bottom: 16px;
+}
+
+.home {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(86, 86, 118, 0.75),
+      rgba(86, 86, 118, 0.75)
+    ),
+    url("../images/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 150px;
+}
+.home-paragraph {
+  text-align: right;
+  font-family: paragraphFont;
+  font-size: 60px;
+  color: #c38d94;
+}
+
+.emphasis {
+  font-family: emphasisFont;
+}
+
+nav {
+  height: 60px;
+  width: 1000px;
+  background-color: white;
+  align-items: center;
+  padding: 50px;
+  display: flex;
+  margin-left: 1200px;
+  position: fixed;
+}
+
+a {
+  text-decoration: none;
+  color: crimson;
+  margin-right: 39px;
+  font-size: 20px;
+  font-family: links;
+  color: #c38d94;
+}
+
+.logo {
+  width: 1200px;
+  font-size: 60px;
+  margin: 0 auto;
+  display: flex;
+  position: fixed;
+  height: 60px;
+  background-color: white;
+  align-items: center;
+  padding: 50px;
+  color: #c38d94;
+  font-family: emphasisFont;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+
+/* products page*/
+
+#cookieBox {
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+}
+
+.cookieHolder {
+  height: 75%;
+  width: 100%;
+  background-color: rgb(168, 92, 104);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textHolder {
+  height: 25%;
+  width: 100%;
+  background-color: rgb(223, 148, 160);
+}
+
+.cookie {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  border-radius: 100%;
+  margin: 50px;
+  linear
+}
+
+.flexBox {
+  height: 100%;
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.chocChip {
+  background-image:
+  linear-gradient(
+    to bottom,
+   rgba(167, 101, 113, .6), 
+   rgba(167, 101, 113, .6)
+
+    ), 
+    url("../images/cookies.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.cream {
+  background-image:
+  linear-gradient(
+    to bottom,
+   rgba(167, 101, 113, .6), 
+   rgba(167, 101, 113, .6)
+
+    ), 
+    url("../images/cookies-cream.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.brownie {
+  background-image:
+  linear-gradient(
+    to bottom,
+   rgba(167, 101, 113, .6), 
+   rgba(167, 101, 113, .6)
+
+    ), 
+    url("../images/brownies.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.brownieTwo {
+  background-image:
+  linear-gradient(
+    to bottom,
+   rgba(167, 101, 113, .6), 
+   rgba(167, 101, 113, .6)
+
+    ), 
+    url("../images/brownies.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.creamTwo {
+  background-image:
+  linear-gradient(
+    to bottom,
+   rgba(167, 101, 113, .6), 
+   rgba(167, 101, 113, .6)
+
+    ), 
+    url("../images/cookies-cream.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.chocChipTwo {
+  background-image:
+  linear-gradient(
+    to bottom,
+   rgba(167, 101, 113, .6), 
+   rgba(167, 101, 113, .6)
+
+    ), 
+    url("../images/cookies.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.textHolder {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  padding: 50px;
+}
+
+.products {
+  color: white;
+  text-align: center;
+}
+
+
+
+
+/* about page*/
+
+
+
+h3 {
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  text-align: center;
+  font-family: textBox;
+  color: white;
+}
+
+h2 {
+  font-size: 60px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.chef {
+  font-family: emphasisFont ;
+}
+
+.maria {
+  background-image:
+  linear-gradient(
+    to bottom,
+   rgba(167, 101, 113, 0), 
+   rgba(167, 101, 113, 0)
+
+    ), 
+    url("../images/about-chef-two.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 600px;
+}
+
+.arnold {
+  background-image:
+  linear-gradient(
+    to bottom,
+   rgba(167, 101, 113, 0), 
+   rgba(167, 101, 113, 0)
+
+    ), 
+    url("../images/about-chef-one.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 600px;
+}
+
+.chefName {
+  font-family: paragraphFont;
+}
+
+.lorem {
+  font-family: textBox;
+  font-size: 15px;
+}
+
+.textCon {
+  height: 25%;
+  width: 700px;
+  background-color: rgb(206, 124, 137);
+  text-align: center;
+  font-size: 25px;
+  font-family: paragraphFont;
+}
+
+#cookieBoxTwo {
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+}
+.cookieHolderTwo {
+  height: 75%;
+  width: 100%;
+  background-color: rgb(206, 124, 137);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.picTextContain {
+  align-items: center;
+  padding: 50px;
+  background-color: rgb(223, 148, 160);
+  display: flex;
+}
+
+
+/* contact page */
+
+
+.contact-form span {
+  color: #ffffff;
+}
+
+.contact-form label {
+  display: block;
+}
+
+.contact-form input {
+  display: block;
+  height: 50px;
+  width: 600px;
+  margin: 20px 0 50px 0;
+  border: 3px solid #ffffff;
+}
+
+.contact-form .submit-button {
+  background-color: rgb(73, 73, 104);
+  color: white;
+  width: 246px;
+  margin: 0 auto;
+  font-family: paragraphFont;
+}
+
+.content-wrapper {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 120px;
+  background-color: rgb(73, 73, 104);
+}
+
+.content-wrapper .content-container {
+  margin: auto;
+  display: flex;
+  max-width: 1000px;
+}
+
+.contact {
+  text-align: center;
+  font-size: 50px;
+}
+
+label {
+  color: white;
+  font-family: paragraphFont;
+}
+
+.contact {
+  color: white;
+  font-family: paragraphFont;
+}
+
+
+
