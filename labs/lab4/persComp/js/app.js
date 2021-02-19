@@ -1,4 +1,5 @@
-let positions = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+let positions = [0, 0, 0, 0];
+let colors = ["green", "blue", "purple", "yellow"];
 
 function setup() {
   createCanvas(400, 300);
@@ -13,6 +14,6 @@ function draw() {
   positions.shift();
 
   for (var i = 0; i < positions.length; i++) {
-    circle(positions[i], 150, 20);
+    circle(positions[i], 150, 30);
   }
 }
