@@ -11,11 +11,11 @@ function setup() {
 function draw() {
   background(9);
   let hunterX = mouseX;
-  let dx = preyX - x;
+  let dx = hunterX - x;
   x -= dx * follow;
 
   let hunterY = mouseY;
-  let dy = preyY - y;
+  let dy = hunterY - y;
   y -= dy * follow;
 
   ellipse(x, y, 20, 20);
