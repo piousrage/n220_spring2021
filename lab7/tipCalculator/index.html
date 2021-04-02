@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Greeter</title>
+  </head>
+  <body class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card card-body text center mt-5">
+            <h1 class="heading display-5 pb-3"></h1>
+            <form id="tip-form">
+              <div class="form-group">
+                <div class="input group">
+                  <span class="input-group-addon">$</span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="billTotal"
+                    placeholder="Total Bill"
+                  />
+                </div>
+              </div>
+              <div class="form-group tiptPercent">
+                <div class="input-group">
+                  <label for="">Tip:</label>
+
+                  <input
+                    type="range"
+                    class="form-control"
+                    id="tipInput"
+                    value="0"
+                  />
+                  <span class="input-group-addon" id="tipOutput"></span>
+                </div>
+              </div>
+            </form>
+            <hr />
+
+            <div id="results" class="pt-4">
+              <h5>Results</h5>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">Tip amount</span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="totalBillWithTip"
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
