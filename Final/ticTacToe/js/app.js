@@ -35,6 +35,7 @@ function draw() {
   line((2 * gridSize) / 3, 0, (2 * gridSize) / 3, gridSize);
   line(0, gridSize / 3, gridSize, gridSize / 3);
   line(0, (2 * gridSize) / 3, gridSize, (2 * gridSize) / 3);
+
   //creates the grid that seperates the sections that players will interact with.
 }
 
@@ -99,7 +100,7 @@ function detectBox(x, y) {
   pos = [99, 99];
 
   if (x > 0 && x < gridSize / 3) {
-    //first column\
+    //first column
     pos[0] = 1;
   } else if (x > gridSize / 3 && x < (2 * gridSize) / 3) {
     //second column
@@ -110,15 +111,19 @@ function detectBox(x, y) {
   }
 
   if (y > 0 && y < gridSize / 3) {
+    //first column
     pos[1] = 1;
   } else if (y > gridSize / 3 && y < (2 * gridSize) / 3) {
+    //second column
     pos[1] = 2;
   } else if (y > (2 * gridSize) / 3 && y < gridSize) {
+    //third column
     pos[1] = 3;
   }
 
   return pos[0] == 99 || pos[1] == 99 ? undefined : pos;
 }
+//allows grid to reset upon user rest
 
 function drawMove(pos, player) {
   player ? fill(0, 0, 0) : fill(255, 255, 255);
@@ -128,7 +133,7 @@ function drawMove(pos, player) {
     gridSize / 6,
     gridSize / 6
   );
-}
+} //switch between the players turns and fills either a empy circle or a filled circle.
 
 function checkWin() {
   for (i = 0; i < 3; i++) {
@@ -145,6 +150,7 @@ function checkWin() {
       }
     }
   }
+  //puts a line through the circles that are three in a row
 
   for (i = 0; i < 3; i++) {
     if (grid[i][0] == grid[i][1] && grid[i][0] != 0) {
@@ -159,6 +165,8 @@ function checkWin() {
       }
     }
   }
+  //puts a line through the circles that are three in a row
+
   for (i = 0; i < 3; i++) {
     if (grid[i][0] == grid[i][1] && grid[i][0] != 0) {
       if (grid[i][1] == grid[i][2]) {
@@ -172,6 +180,7 @@ function checkWin() {
       }
     }
   }
+  //watches if certain sections have the same circle in a row
 
   if (grid[0][0] == grid[1][1] && grid[0][0] != 0) {
     if (grid[1][1] == grid[2][2]) {
@@ -184,6 +193,7 @@ function checkWin() {
       return grid[0][0];
     }
   }
+  //watches if certain sections have the same circle in a row
 
   if (grid[0][2] == grid[1][1] && grid[0][2] != 0) {
     if (grid[1][1] == grid[2][0]) {
@@ -196,11 +206,13 @@ function checkWin() {
       return grid[0][2];
     }
   }
+  //watches if certain sections have the same circle in a row
 
   if (moves == 9) {
     win = 2;
   }
 }
+//helps game identify a tie
 
 var mousePresses = 0;
 function skipMousePress() {
@@ -211,3 +223,4 @@ function skipMousePress() {
   }
   return false;
 }
+//allows the player to reset the game
